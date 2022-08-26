@@ -1,2 +1,2 @@
-#Información de loque se encontrara dentro de las carpetas
- - Archivo .- primer-proyecto: Se encontrara mi primer "Hola mundo" que realize para comprobar que la ejecucion y la configuraciòn del WSL y Rust esten correctas.
+# Información ue se encontrara dentro de las carpetas
+ - primer-proyecto: Se encontrara mi primer "Hola mundo" que realice para comprobar que la ejecución y la configuración del WSL y Rust esten correctas.
