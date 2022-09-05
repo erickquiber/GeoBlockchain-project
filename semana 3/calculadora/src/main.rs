@@ -31,6 +31,22 @@ fn main() {
         expresion=expresion.replace(cap_expression, &multi.to_string());
     }
 
+    loop {
+        // Capturar los datos que queremos para operarlos
+        let caps = re_add.captures(expresion.as_str()); // caps 1: 15 y caps 2:: 20
+
+        if caps.is_none(){
+            break;
+        }
+        
+        let caps = caps.unwrap();
+        let cap_expression = caps.get(0).unwrap().as_str();
+        let left_value: i32 = caps.get(1).unwrap().as_str().parse().unwrap();
+        let right_value: i32 = caps.get(2).unwrap().as_str().parse().unwrap();
+        let suma = left_value + right_value;
+
+        expresion=expresion.replace(cap_expression, &suma.to_string());
+    }
 
     // Loop para las restas
     loop {
@@ -50,23 +66,6 @@ fn main() {
         expresion=expresion.replace(cap_expression, &resta.to_string());
     }
 
-    // Loop para las sumas
-    loop {
-        // Capturar los datos que queremos para operarlos
-        let caps = re_add.captures(expresion.as_str()); // caps 1: 15 y caps 2:: 20
-
-        if caps.is_none(){
-            break;
-        }
-        
-        let caps = caps.unwrap();
-        let cap_expression = caps.get(0).unwrap().as_str();
-        let left_value: i32 = caps.get(1).unwrap().as_str().parse().unwrap();
-        let right_value: i32 = caps.get(2).unwrap().as_str().parse().unwrap();
-        let suma = left_value + right_value;
-
-        expresion=expresion.replace(cap_expression, &suma.to_string());
-    }
     
    
  // nos dice con mayor detalle que esta haciendo esa variable
