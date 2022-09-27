@@ -1,0 +1,4 @@
+[v1]
+"cargo-contract 1.5.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-contract"]
+"contracts-node 0.1.0 (git+https://github.com/paritytech/substrate-contracts-node.git?tag=v0.1.0#acbf103f4305e8eb685aa8589704436b7fc327f4)" = ["substrate-contracts-node"]
+"dylint-link 2.0.12 (registry+https://github.com/rust-lang/crates.io-index)" = ["dylint-link"]
